@@ -1,7 +1,7 @@
 # 2022 데이터청년캠퍼스 프로젝트
-커리큘럼 명 : 빅데이터 분석 처리 과정 - 연세대학교
-프로젝트 명 : " 배추 농가의 가뭄 피해 최소화를 위한 국내 배추 가격 예측 시스템 "
-프로젝트 팀 : MIDAS
+커리큘럼 명 : 빅데이터 분석 처리 과정 - 연세대학교<br/>
+프로젝트 명 : " 배추 농가의 가뭄 피해 최소화를 위한 국내 배추 가격 예측 시스템 "<br/>
+프로젝트 팀 : MIDAS<br/>
 제출일자 : 2022.08.26
 
 ## Environments
@@ -11,9 +11,9 @@
     # Matplotlib	version	3.5.1
     # Plotly		version	5.10.0
     # Statsmodel	version	0.13.2
-    # Tensorflow 	version	2.9.1
+    # Tensorflow	version	2.9.1
     # Keras		version	2.9.0
-    # Scikit-learn 	version	1.1.1
+    # Scikit-learn	version	1.1.1
 
 ## Libraries
  
@@ -21,9 +21,9 @@
     # Matplotlib	pip install matplotlib
     # Plotly		pip install plotly
     # Statsmodel	pip install statsmodels
-    # Tensorflow 	pip install tensorflow 
-    # Keras			pip install keras
-    # Scikit-learn 	pip install scikit-learn
+    # Tensorflow	pip install tensorflow 
+    # Keras		pip install keras
+    # Scikit-learn	pip install scikit-learn
 
 ## Directories
     .
@@ -64,47 +64,47 @@
 - 각 파일명 맨 앞 숫자 순서로 코드를 실행하면 전처리가 완료됩니다.
 - (e.g. : '1_가뭄지수_전처리.ipynb' 실행 후 '2_시장별_거래량_우세_품목_종합.ipynb' 실행)
 	 
-	1_가뭄지수_전처리.ipynb
-	  - 일별로 측정된 가뭄지수 중 학습에 활용할 3개의 지수 SPI1, SPI3, EDI를 각 관측지점 별로 통합하여 하나의 데이터셋으로 종합합니다.
-	  - inputs : "./data/가뭄/원본/"
-	  - output : "./data/가뭄/2013_2021_가뭄지수데이터.csv"
+	1_가뭄지수_전처리.ipynb<br/>
+	  - 일별로 측정된 가뭄지수 중 학습에 활용할 3개의 지수 SPI1, SPI3, EDI를 각 관측지점 별로 통합하여 하나의 데이터셋으로 종합합니다.<br/>
+	  - inputs : "./data/가뭄/원본/"<br/>
+	  - output : "./data/가뭄/2013_2021_가뭄지수데이터.csv"<br/>
 
-	2_시장별_거래량_우세_품목_종합.ipynb
-	  - 전국 5대 도시의 품종별 배추 거래량을 통합하여 하나의 데이터셋으로 종합합니다.
-	  - inputs : "./data/거래량/원본/"
-	  - output : "./data/거래량/13_21년도_5대시장_거래량_종합.csv"
+	2_시장별_거래량_우세_품목_종합.ipynb<br/>
+	  - 전국 5대 도시의 품종별 배추 거래량을 통합하여 하나의 데이터셋으로 종합합니다.<br/>
+	  - inputs : "./data/거래량/원본/"<br/>
+	  - output : "./data/거래량/13_21년도_5대시장_거래량_종합.csv"<br/>
 
-	3_면세유가_일반유가_전처리.ipynb
-	  - 주유소 지역별 유가 데이터 중 결측값을 보간 처리하여 하나의 데이터셋으로 종합합니다.
-	  - inputs : "./data/유가/원본/"
-	  - output : "./data/유가/13_21_면세유가.csv"
+	3_면세유가_일반유가_전처리.ipynb<br/>
+	  - 주유소 지역별 유가 데이터 중 결측값을 보간 처리하여 하나의 데이터셋으로 종합합니다.<br/>
+	  - inputs : "./data/유가/원본/"<br/>
+	  - output : "./data/유가/13_21_면세유가.csv"<br/>
 
- 	4_재배면적_생산량_전처리.ipynb
-	  - 전체 탐색기간 내 주요지역 배추 재배면적과 생산량을 하나의 데이터셋으로 종합합니다.
-	  - inputs : "./data/재배면적_생산량/원본/"
-	  - output :"./data/재배면적_생산량/2013_2020_주요지역_재배면적_생산량.csv"
+ 	4_재배면적_생산량_전처리.ipynb<br/>
+	  - 전체 탐색기간 내 주요지역 배추 재배면적과 생산량을 하나의 데이터셋으로 종합합니다.<br/>
+	  - inputs : "./data/재배면적_생산량/원본/"<br/>
+	  - output :"./data/재배면적_생산량/2013_2020_주요지역_재배면적_생산량.csv"<br/>
 
- 	5_도매가_데이터_종합.ipynb
-	  - 각 연도별, 배추품종별 도매가격 데이터를 하나의 데이터셋으로 종합합니다.
-	  - inputs : "./data/도매가/원본/"
-	  - output : "./data/도매가/종합/도매_가격_완성본_13_21년도.csv"
+ 	5_도매가_데이터_종합.ipynb<br/>
+	  - 각 연도별, 배추품종별 도매가격 데이터를 하나의 데이터셋으로 종합합니다.<br/>
+	  - inputs : "./data/도매가/원본/"<br/>
+	  - output : "./data/도매가/종합/도매_가격_완성본_13_21년도.csv"<br/>
 
- 	6_도매가_보간_전처리.ipynb
-	  - '5_도매가_데이터_종합.ipynb'에서 종합된 데이터 중 결측지를 탐색후 보간처리하여 데이터셋화합니다.
-	  - inputs : "./data/도매가/종합/", "./data/거래량/13_21년도_5대시장_거래량_종합.csv"
-	  - output : "./data/재배면적_생산량/종합/도매_가격_완성본_13_21년도.csv"
+ 	6_도매가_보간_전처리.ipynb<br/>
+	  - '5_도매가_데이터_종합.ipynb'에서 종합된 데이터 중 결측지를 탐색후 보간처리하여 데이터셋화합니다.<br/>
+	  - inputs : "./data/도매가/종합/", "./data/거래량/13_21년도_5대시장_거래량_종합.csv"<br/>
+	  - output : "./data/재배면적_생산량/종합/도매_가격_완성본_13_21년도.csv"<br/>
 
- 	7_최종_학습_데이터셋_종합.ipynb
-	  - 위 과정들을 통해 전처리된 각 데이터들을 모델 학습을 위한 형태로 종합하여 각 지역별 데이터셋화합니다.
-	  - inputs : "./data/result/입력/"
-	  - output : "./data/result/입력/학습데이터1차_{지역명}.csv"
+ 	7_최종_학습_데이터셋_종합.ipynb<br/>
+	  - 위 과정들을 통해 전처리된 각 데이터들을 모델 학습을 위한 형태로 종합하여 각 지역별 데이터셋화합니다.<br/>
+	  - inputs : "./data/result/입력/"<br/>
+	  - output : "./data/result/입력/학습데이터1차_{지역명}.csv"<br/>
 
- 	8_최종_학습_데이터셋_{지역별}_shift_merge.ipynb
-	  - 1차로 종합된 학습 데이터에서 모델 학습 최적화를 위한 shift를 적용하고 재조합합니다.
-	  - 지역별 최종 학습 데이터셋을 작성하는 코드로 지역별로 총 5개의 코드가 있습니다.
-	  - 가격 예측을 위한 학습 데이터 작성을 원하는 지역을 선정하여 실행하면 해당 지역에 대한 최종 학습 데이터를 얻을 수 있습니다.
-	  - inputs : "./data/result/입력/학습데이터1차_{지역명}.csv"
-	  - output : "./data/result/출력/최종학습데이터_{지역명}.csv"
+ 	8_최종_학습_데이터셋_지역별_shift_merge.ipynb<br/>
+	  - 1차로 종합된 학습 데이터에서 모델 학습 최적화를 위한 shift를 적용하고 재조합합니다.<br/>
+	  - 지역별 최종 학습 데이터셋을 작성하는 코드로 지역별로 총 5개의 코드가 있습니다.<br/>
+	  - 가격 예측을 위한 학습 데이터 작성을 원하는 지역을 선정하여 실행하면 해당 지역에 대한 최종 학습 데이터를 얻을 수 있습니다.<br/>
+	  - inputs : "./data/result/입력/학습데이터1차_{지역명}.csv"<br/>
+	  - output : "./data/result/출력/최종학습데이터_{지역명}.csv"<br/>
 
 ### 2. 모델 코드 실행
 - 모델 코드 디렉토리("./모델코드/") 내에 배추 가격 예측을 위한 모델 코드가 모델별, 지역별로 구분되어 있습니다.
